@@ -1,17 +1,33 @@
-# ppb_produk_bawaan
+# Citra's Haven - Mobile Flutter App
 
-A new Flutter project.
+Aplikasi mobile berbasis Flutter yang dikembangkan untuk menampilkan daftar produk, pencarian produk secara interaktif, dan halaman detail produk dengan memanfaatkan REST API dari **DummyJSON**[cite: 1, 2]. Aplikasi ini dirancang dengan antarmuka khusus seluler yang mengusung tema skema warna pastel yang lembut dan estetik[cite: 1, 3].
 
-## Getting Started
+## 👩‍💻 Identitas Pengembang
+* **Nama:** Shafira Fitri Citra Ramadhanti
+* **Program Studi:** Teknik Informatika (Semester 5)
+* **Institusi:** Universitas Muhammadiyah Bandung
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## ✨ Fitur Utama Aplikasi
+1. **Dinamis dari API DummyJSON:** Mengambil data produk, kategori, dan detail secara *real-time* dari endpoint resmi DummyJSON[cite: 1].
+2. **Skema Warna Pastel:** Antarmuka menggunakan palet warna pastel yang manis dan nyaman dipandang (Lavender, Mint, Peach, Soft Pink)[cite: 1, 3].
+3. **Pencarian Fungsional (Search Bar):** Fitur pencarian produk secara instan berdasarkan kata kunci[cite: 1].
+4. **Navigasi Kategori:** Menyaring produk berdasarkan kategori pilihan secara horizontal.
+5. **Halaman Detail Produk:** Menampilkan informasi lengkap mulai dari gambar, harga, rating bintang, merek (brand), stok, hingga deskripsi produk[cite: 4].
+6. **Manajemen Data (CRUD Support):** Mendukung penambahan, penyuntingan, dan penghapusan data produk.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📂 Struktur Proyek & Arsitektur
+Proyek ini dibangun menggunakan arsitektur modular yang bersih di Flutter:
+* `lib/models/`: Berisi pemodelan data (`product_model.dart`) untuk parsing JSON ke objek Dart secara *strongly-typed* beserta proteksi *null-safety*[cite: 2].
+* `lib/service/`: Berisi pengaturan jaringan (`api_service.dart`) menggunakan package **Dio** untuk mengatur komunikasi HTTP dengan DummyJSON.
+* `lib/screens/`: Berisi tampilan antarmuka utama seperti `ListProductScreen` (halaman utama) dan `DetailProductScreen` (halaman detail)[cite: 2].
+* `lib/providers/`: Mengatur state management aplikasi secara reaktif.
+
+---
+
+📹 Video Demo & Presentasi
+    Link Video YouTube (Demo & Penjelasan): [https://youtu.be/uWzVsQZRVR0?si=BKCJJuinz-cGhBCf]
+   
